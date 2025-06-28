@@ -1,13 +1,39 @@
 :root {
     --primary-color: #74C69D;
     --white-color: #FFFFFF;
+    --dark-color: #212529;
+    --dark-color-50: #21252980;
+    --dark-color-25: #21252940;
     
     font-size: 16px;
     font-family: 'Work Sans';
+    line-height: 125%;
 }
 
 body {
     margin: 0;
+}
+
+.body-regular {
+    font-size: 0.9375rem;
+}
+
+.sub-heading {
+    font-size: 1.25rem;
+    font-family: 'Work Sans';
+    line-height: 125%;
+}
+
+.button {
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    border: none;
+    padding: 13px 30px 10px;
+    /* padding-top: 13px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px; */
+    border-radius: 5px;
 }
 
 .header-section, 
@@ -16,9 +42,12 @@ body {
     color: var(--white-color);
 }
 
-.header-section-content {
+.section-content {
     width: 1175px;
     margin: 0 auto;
+}
+
+.header-section-content {
     padding-top: 35px;
     padding-bottom: 38px;
   
@@ -48,3 +77,71 @@ body {
     color: var(--white-color);
     font-size: 1.25rem;
 }
+
+/* Service section */
+.service-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-card {
+    width: 280px;
+    padding: 46px 30px;
+    border-radius: 5px;
+    box-shadow: 3px 4px 12px 1px var(--dark-color-25);
+}
+
+.price-container {
+    display: flex;
+    gap: 9px;
+}
+
+.price-container strong {
+    font-size: 2.5rem;
+}
+
+.price-container em, 
+.service-card-header-text {
+    color: var(--dark-color-50);
+}
+
+.service-list {
+    /* list-style-image: url('../img/check-icon.svg'); */
+    list-style: none;
+}
+
+.service-list li::before {
+    content: url('../img/check-icon.svg');
+    position: relative;
+    top: 3px; /* top: 7px; */
+    right: 5px; /* right: 10px; */
+}
+
+@media (max-width: 1200px) {
+    .service-section {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .section-content {
+        width: 100px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-content {
+        width: 900px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-content {
+        width: 680px;
+    }
+}
+
+@media (max-width: 568px) {
+    .section-content {
+        width: 400px;
+    }
+} 
