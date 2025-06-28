@@ -1,13 +1,50 @@
+:root {
+    --primary-color: #74C69D;
+    --white-color: #FFFFFF;
+    
+    font-size: 16px;
+    font-family: 'Work Sans';
+}
+
 body {
     margin: 0;
 }
 
 .header-section, 
 .footer-section {
-    background-color: #74C69D;
+    background-color: var(--primary-color);
+    color: var(--white-color);
 }
 
 .header-section-content {
     width: 1175px;
     margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 38px;
+  
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.brand-name {
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.navigation-container ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navigation-container a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.25rem;
 }
