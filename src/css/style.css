@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+.header-section, 
+.footer-section {
+    background-color: #74C69D;
+}
+
+.header-section-content {
+    width: 1175px;
+    margin: 0 auto;
+}
