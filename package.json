@@ -1,0 +1,25 @@
+{
+  "name": "sirma-html-and-css-workshop-jun-2025",
+  "version": "1.0.0",
+  "description": "Course Workshop",
+  "devDependencies": {
+    "vite": "^7.0.0"
+  },
+  "scripts": {
+    "dev": "vite", 
+    "build": "vite build", 
+    "preview": "vite preview" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teodora-samardzhieva/sirma-html-and-css-workshop-jun-2025.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/teodora-samardzhieva/sirma-html-and-css-workshop-jun-2025/issues"
+  },
+  "homepage": "https://github.com/teodora-samardzhieva/sirma-html-and-css-workshop-jun-2025#readme"
+}
