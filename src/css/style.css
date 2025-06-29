@@ -3,6 +3,7 @@
     --white-color: #FFFFFF;
     --white-color-75: #FFFFFFC0;
     --dark-color: #212529;
+    --dark-color-75: #212529C0;
     --dark-color-50: #21252980;
     --dark-color-25: #21252940;
     
@@ -28,7 +29,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     margin: 0;
 }
 
@@ -37,6 +39,11 @@ h1 {
     font-size: 2.5rem;
     line-height: 125%;
     letter-spacing: 2px;
+}
+
+h4 {
+    font-family: 'Crimson Text';
+    font-size: 1.5rem;
 }
 
 .body-regular {
@@ -71,6 +78,11 @@ h1 {
     border: none;
     padding: 13px 47px 10px; /* top left&right bottom */
     border-radius: 5px;
+}
+
+.box-shadow {
+    box-shadow: 3px 4px 12px 1px var(--dark-color-25); 
+    /* x(h-offset) y(v-offset) blur spread color */
 }
 
 /* Heading section */
@@ -216,6 +228,44 @@ h1 {
     font-size: 0.9375rem;
 }
 
+.our-team {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.view-team {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+/* Team cards */
+.team-section {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 20px 25px;
+}
+
+.team-card header {
+    padding: 0 13px;
+}
+
+.team-card p {
+    color: var(--dark-color-75);
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+}
+
 /* Service section */
 .service-section {
     display: flex;
@@ -227,7 +277,6 @@ h1 {
     width: 280px;
     padding: 46px 30px;
     border-radius: 5px;
-    box-shadow: 3px 4px 12px 1px var(--dark-color-25);
 }
 
 .service-card-header {
@@ -307,6 +356,10 @@ h1 {
         gap: 40px;
     }
 
+    .team-card header {
+        padding: 0;
+    }
+
     .section-content {
         width: 1000px;
     }
@@ -330,6 +383,15 @@ h1 {
     .landingpage-section-content {
         max-width: 370px;
     } 
+
+    .team-section {
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+    }
+
+    .team-card header {
+        padding: 0 13px;
+    }
 
     .service-section {
         flex-direction: column;
@@ -375,6 +437,10 @@ h1 {
         grid-template-columns: 1fr;
     }
 
+    .team-section {
+        gap: 20px;
+    }
+
     .footer-section-content {
         flex-direction: column;
         align-items: center;
@@ -391,6 +457,15 @@ h1 {
     .learn-more, 
     .portfolio-section {
         margin-bottom: 30px;
+    }
+
+    .team-section {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .view-team {
+        margin-bottom: 40px;
     }
 
     .section-content {
