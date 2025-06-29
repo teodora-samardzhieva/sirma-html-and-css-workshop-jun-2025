@@ -12,6 +12,29 @@
 
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.main-section {
+    flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Crimson Text';
+    font-size: 2.5rem;
+    letter-spacing: 2px; 
 }
 
 .body-regular {
@@ -22,6 +45,14 @@ body {
     font-size: 1.25rem;
     font-family: 'Work Sans';
     line-height: 125%;
+    margin: 0;
+}
+
+.label {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }
 
 .button {
@@ -40,6 +71,24 @@ body {
 .footer-section {
     background-color: var(--primary-color);
     color: var(--white-color);
+}
+
+.header-section {
+    margin-bottom: 35px;
+}
+
+.footer-section {
+    padding: 50px 0;
+}
+
+.footer-section-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
 }
 
 .section-content {
@@ -78,10 +127,31 @@ body {
     font-size: 1.25rem;
 }
 
+/* Heading section */
+.heading-section {
+    width: 411px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    gap: 25px;
+    margin-bottom: 80px;
+}
+
+.heading-section h2 {
+    color: var(--primary-color);
+}
+
+.heading-section .sub-heading {
+    line-height: 160%;
+}
+
 /* Service section */
 .service-section {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 135px;
 }
 
 .service-card {
