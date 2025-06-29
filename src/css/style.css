@@ -1,6 +1,7 @@
 :root {
     --primary-color: #74C69D;
     --white-color: #FFFFFF;
+    --white-color-75: #FFFFFFC0;
     --dark-color: #212529;
     --dark-color-50: #21252980;
     --dark-color-25: #21252940;
@@ -59,11 +60,15 @@ h1 {
     color: var(--white-color);
     background-color: var(--dark-color);
     border: none;
-    padding: 13px 30px 10px;
-    /* padding-top: 13px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px; */
+    padding: 13px 30px 10px; /* top left&right bottom */
+    border-radius: 5px;
+}
+
+.secondary-button {
+    color: var(--dark-color);
+    background-color: var(--white-color);
+    border: none;
+    padding: 13px 47px 10px; /* top left&right bottom */
     border-radius: 5px;
 }
 
@@ -82,9 +87,28 @@ h1 {
     content: url('../img/burger-menu.svg');
 }
 
-/* .footer-section {
-    padding: 50px 0;
-} */
+.hero-section {
+    display: flex;
+    gap: 120px;
+    padding-bottom: 82px;
+}
+
+.hero-section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.hero-section-content h1 {
+    line-height: 125%;
+    letter-spacing: 2px;
+}
+
+.hero-section-content p {
+    color: var(--white-color-75);
+    font-size: 0.9375rem;
+}
 
 .footer-section-content {
     display: flex;
